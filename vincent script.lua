@@ -1,5 +1,3 @@
---// discord.gg/visualontop
-
 local Stats = game:GetService('Stats')
 
 local Players = game:GetService('Players')
@@ -11,6 +9,8 @@ local ReplicatedStorage = game:GetService('ReplicatedStorage')
 local TweenService = game:GetService('TweenService')
 
 local Nurysium_Util = loadstring(game:HttpGet('https://raw.githubusercontent.com/flezzpe/Nurysium/main/nurysium_helper.lua'))()
+
+local Vincent_Util = loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZYT/DenDenZ-s-Open-Source-Collection/main/Component"))() 
 
 local local_player = Players.LocalPlayer
 
@@ -93,8 +93,8 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Triple Hub",
-    SubTitle = "by triple",
+    Title = "Vincent Hub",
+    SubTitle = "by Vincent",
     TabWidth = 180,
     Size = UDim2.fromOffset(450, 225),
     Acrylic = false, -- The blur may be detectable, setting this to false disables blur entirely
@@ -257,10 +257,10 @@ local Mainy = Tabs.Main:AddSection("Parry")
 
 Mainy:AddParagraph({
         Title = "NEWS",
-        Content = "we fixed it."
+        Content = "Remake by vincet"
     })
 
-local Toggle = Mainy:AddToggle("Ping Based Parry", {Title = "Auto parry ", Default = false })
+local Toggle = Mainy:AddToggle("Ping Based Parry", {Title = "Auto parry ", Default = true })
 Toggle:OnChanged(function(toggled)
 
    resolve_parry_Remote()
@@ -330,6 +330,14 @@ Toggle:OnChanged(function(toggled)
 end)
 
 Misc:AddButton({
+        Title = "Manual Spam",
+        Description = "Manual Spam",
+        Callback = function()        
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/nqxlOfc/SlzAX17vGCub7iRKVmJid61Bg/main/KwKVzV5SgcFBd9fnpLr4lKCg6.lua"))()
+        end
+    })
+
+Misc:AddButton({
         Title = "Mobile Keyboard",
         Description = "launches a GUI that mimics a Keyboard.",
         Callback = function()
@@ -391,7 +399,7 @@ Misc:AddButton({
 local Slider = Misc:AddSlider("Slider", {
         Title = "Walk speed",
         Description = "Use this to change your walk speed",
-        Default = 21,
+        Default = 30,
         Min = 0,
         Max = 500,
         Rounding = 1,
@@ -462,7 +470,7 @@ Misc:AddButton({
         Title = "FPS boost",
         Description = "Use this to boost your fps",
         Callback = function()
-          loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fps-booster-9504"))()
+          loadstring(game:HttpGet("https://pastebin.com/raw/PkMN7QKQ"))()
   print("Fluxus")
         end
   })
@@ -519,12 +527,12 @@ local Credits = Tabs.Credits:AddSection("Credits")
 
 Credits:AddParagraph({
         Title = "Credits",
-        Content = "Script was made by triple"
+        Content = "Script was made by vincent"
     })
 
 Credits:AddParagraph({
-        Title = "triple",
-        Content = "Made by Triple or itsborg. on discord"
+        Title = "vincent",
+        Content = "Made by vincent. on discord"
     })
 
 Credits:AddButton({
@@ -532,7 +540,7 @@ Credits:AddButton({
         Description = "own server",
         Callback = function()
         
-setclipboard("https://discord.com/invite/QydDGkca")  
+setclipboard("https://discord.gg/s6D3VCFf")  
         end
     })
     
@@ -540,7 +548,7 @@ local Showcase = Tabs.Credits:AddSection("Awesome Showcasers")
 
 Showcase:AddParagraph({
         Title = "Youtuber",
-        Content = "Đạt Mod, Ley D Murphy, r4mpage and More "
+        Content = "Empty"
     })
     
     print("Idk©")
@@ -751,93 +759,15 @@ task.spawn(function()
 
         aura_table.spam_Range = math.max(ping / 10, 15) + ball_Speed / 7
 
-        aura_table.parry_Range = math.max(math.max(ping, 5) + ball_Speed / 3.5, 9.5)
+        aura_table.parry_Range = math.max(math.max(ping, 4) + ball_Speed / 3.5, 9.5)
 
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-        
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
-
-        aura_table.is_Spamming = aura_table.hit_Count > 1000 or ball_Distance < 10.5
+        aura_table.is_Spamming = aura_table.hit_Count > 1 or ball_Distance < 13.5
 
         if ball_Dot < -0.2 then
 
             aura_table.ball_Warping = tick()
 
         end
-
-				local a = game:GetService("VirtualInputManager")
-local b = game:GetService("RunService")
-local c = game:GetService("Players").LocalPlayer
-local d = loadstring(game:HttpGet("https://raw.githubusercontent.com/DenDenZYT/DenDenZ-s-Open-Source-Collection/main/Component"))() 
-
-local e = false
-
-spawn(function()
-    b.PreRender:Connect(function()
-        if not getgenv().f then return end
-
-        local g = d.FindTargetBall()
-        if not g then return end
-
-        local h = g.AssemblyLinearVelocity
-        if g:FindFirstChild('zoomies') then 
-            h = g.zoomies.VectorVelocity
-        end
-
-        local i = g.Position
-        local j = c.Character.PrimaryPart.Position
-        local k = (j - i).Unit
-        local l = c:DistanceFromCharacter(i)
-        local m = k:Dot(h.Unit)
-        local n = h.Magnitude
-
-        if m > 0 then
-            local o = l - 5
-            local p = o / n
-
-            if d.IsPlayerTarget(g) and p <= 0.35 and not e then
-                a:SendMouseButtonEvent(0, 0, 0, true, game, 0)
-                wait(0.01)
-                e = true
-            end
 
         task.spawn(function()
 
